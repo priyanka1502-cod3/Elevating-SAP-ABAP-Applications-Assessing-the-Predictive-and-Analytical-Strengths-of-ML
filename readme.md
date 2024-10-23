@@ -139,7 +139,7 @@ data = {
 296, 15.3, 396.90, 4.98]
 }
 response = 
-requests.post("http://priyanka2023.pythonanywhere.com/predict", 
+requests.post("http://yourname.pythonanywhere.com/predict", 
 data=json.dumps(data))
 print(response.json())
 Python script that loads 
@@ -165,7 +165,7 @@ from flask import Flask, request, jsonify
 import numpy as np # Add this line
 # Load pickle file
 with 
-open('/home/Priyanka2023/mysite/Random_Forest_model.pkl', 
+open('/homeyourwebsitename/mysite/Random_Forest_model.pkl', 
 'rb') as f:
  model = pickle.load(f)
 model = pickle.load(f)
@@ -329,7 +329,7 @@ CLASS zhousing IMPLEMENTATION.
  DATA: url TYPE string,
  http_client TYPE REF TO if_http_client,
  response TYPE string.
- url = 'http://priyanka2023.pythonanywhere.com/predict'. " 
+ url = 'http://yourname.pythonanywhere.com/predict'. " 
 Replace with your actual URL
  CALL METHOD cl_http_client=>create_by_url
  EXPORTING
@@ -390,7 +390,7 @@ CLASS zhousing IMPLEMENTATION.
  xstring_data TYPE xstring,
  http_request TYPE REF TO if_http_request.
  TRY.
- url = 'http://priyanka2023.pythonanywhere.com/'. " 
+ url = 'http://yourname .pythonanywhere.com/'. " 
 Replace with your actual URL
  CALL METHOD cl_http_client=>create_by_url
  EXPORTING
